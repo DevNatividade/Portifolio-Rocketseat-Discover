@@ -15,6 +15,8 @@ html {
 
 body {
     background: #22212C;
+
+    padding: 24px;
 }
 
 section {
@@ -28,13 +30,13 @@ section {
     "head footer";
     grid-template-columns: 400px;
 
-    margin: 24px;
+    margin-bottom: 160px;
 }
 
 header {
     display: grid;
     gap: 24px;
-
+    margin-bottom: 24px;
 
     grid-area: head;
 }
@@ -107,5 +109,7 @@ footer {
     background: #302F3D;
     border-radius: 10px;
     grid-area: footer;
+
+    margin-bottom: 300px;
 }
 
