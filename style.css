@@ -37,7 +37,6 @@ header {
 
 
     grid-area: head;
-    border: 1px solid red;
 }
 
 #identify {
@@ -45,21 +44,16 @@ header {
     border-radius: 10px;
 
     padding: 24px;
+
+    text-align: center;
 }
 
-header img {
-    position: relative;
-    left: 100px;
-    
+header img {    
     margin:24px 0;
     padding: 1px;
     width: 120px;
     border-radius: 50%;
     border: 3px solid rgb(34, 174, 34);
-}
-
-header h2,p {
-
 }
 
 header p {
@@ -99,24 +93,19 @@ header p {
 
     font-weight: bold;
     color: #302F3D;
-}
 
-
-#container {
+    text-align: center;
 }
 
 main {
     background: #302F3D;
     border-radius: 10px;
     grid-area: main;
-    border: 1px solid green;
-
 }
 
 footer {
-    background: #302F3D;1
+    background: #302F3D;
     border-radius: 10px;
     grid-area: footer;
-    border: 1px solid blue;
 }
 
