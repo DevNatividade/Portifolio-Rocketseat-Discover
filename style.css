@@ -4,7 +4,13 @@
     box-sizing: border-box;
     list-style: none;
 
-    color: white;
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
@@ -12,52 +18,105 @@ body {
 }
 
 section {
-    width: 480px;
-    margin: 24px 32px 24px;
+    height: 100vh;
+
     display: grid;
     gap: 24px;
+    grid-template-areas: 
+    "head main"
+    "head main"
+    "head footer";
+    grid-template-columns: 400px;
+
+    margin: 24px;
 }
 
 header {
-    padding: 24px;
+    display: grid;
+    gap: 24px;
 
-    background: #302f3d;
+
+    grid-area: head;
+    border: 1px solid red;
+}
+
+#identify {
+    background: #302F3D;
     border-radius: 10px;
+
+    padding: 24px;
 }
 
 header img {
+    position: relative;
+    left: 100px;
+    
+    margin:24px 0;
+    padding: 1px;
     width: 120px;
     border-radius: 50%;
+    border: 3px solid rgb(34, 174, 34);
 }
 
-address {
-    padding: 24px;
+header h2,p {
 
-    background: #302f3d;
+}
+
+header p {
+    font-size: 12px;
+}
+
+#social {
+    background: #302F3D;
     border-radius: 10px;
+
+    padding: 24px;
+    font-size: 12px;
 }
 
-address li {
-    padding: 14px;
+#social li {
+    padding: 12px;
+}
+
+#technology {
+    background: #302F3D;
+    border-radius: 10px;
+
+    padding: 24px;
+}
+
+.technology-list {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    gap: 24px;
+    
+    padding: 24px;
+}
+
+.technology-list li {
+    background-color: #CB92B1;
+    border-radius: 12px;
+
+    font-weight: bold;
+    color: #302F3D;
+}
+
+
+#container {
+}
+
+main {
+    background: #302F3D;
+    border-radius: 10px;
+    grid-area: main;
+    border: 1px solid green;
+
 }
 
 footer {
-    padding: 24px;
-    
-    background: #302f3d;
+    background: #302F3D;1
     border-radius: 10px;
+    grid-area: footer;
+    border: 1px solid blue;
 }
 
-.technologly-list {
-    display: flex;
-    gap: 32px;
-}
-
-footer li {
-    margin: auto;
-    width: 80px;
-    padding: 5px;
-
-    border-radius: 15px;
-    background: rgb(230, 123, 141);
-}
