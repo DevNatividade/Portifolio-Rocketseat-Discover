@@ -3,7 +3,8 @@
         <head>
             <!--css-->
             <link rel="stylesheet" href="style.css">
-
+            <!--icon-->
+            <link rel="shortcut icon" href="./favicon.ico" type="image/png">
             <!--Fonte Inter-->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,24 +13,34 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Portifólio | Vagner Jr.</title>
+            <title>Portifólio | Vagner</title>
         </head>
+        
+        <!--Tirar o sublinhado dos links-->
+        <STYLE>
+            A {
+                text-decoration: none;
+            }
+        </STYLE>
 
         <body>
+            <!--Display grid no 'section'-->
             <section>
                 <header>
                     <div id="identify">
                         <img src="https://avatars.githubusercontent.com/u/113365783?v=4" alt="Foto de perfil no Github de Vagner Junior">                      
-                        <h2>Vagner Natividade T. Junior</h2>
+                        <h2>Vagner Natividade</h2>
                         <p>Fron End Developer</p>
                     </div>
                         
                     <div id="social">
                         <ul class="social-list">
+                            <!--style="text-decoration:none"
+                                para tirar o o sublinhado de cada link um por um-->
                             <li>
-                                        <a target="_blank" href="https://www.google.com/maps/place/Brasil/@-14.4086569,-51.31668,4z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                        </a> &ensp;&ensp; Brasil
+                                <a target="_blank" href="https://www.google.com/maps/place/Brasil/@-14.4086569,-51.31668,4z/data=!3m1!4b1!4m5!3m4!1s0x9c59c7ebcc28cf:0x295a1506f2293e63!8m2!3d-14.235004!4d-51.92528">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </a> &ensp;&ensp; Brasil
                             </li>            
                             <li> 
                                         <a target="_blank" href="https://www.rocketseat.com.br">
@@ -76,7 +87,44 @@
                 </header>
 
                     <main>
+                        <div id="projects">
+                            <h2>My Projects</h2>
+                            <p>veja todos</p>
+                        </div>
 
+                        <div id="project-1">
+                            <h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> 
+                                &ensp;my-onix
+                            </h4>
+                            <small>Consulte os códigos de errp que aparecem no painel de veículo Onix</small>
+                            <div id="star-1">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    100 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                                    100
+                                </p>
+                                <span>javascript</span>
+                            </div>  
+                        </div>
+                        
+                        <div id="project-2">
+                            <h4>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg> 
+                                &ensp;     my-onix
+                            </h4>
+                            <small>Consulte os códigos de errp que aparecem no painel de veículo Onix</small>
+                            <div id="star-2">
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    100 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+                                    100
+                                </p>
+                                <span>javascript</span>
+                            </div>
+                        </div>
                     </main>
     
                     <footer>

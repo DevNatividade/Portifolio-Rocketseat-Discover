@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-
     color: #837E9F;
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -15,38 +14,32 @@ html {
 
 body {
     background: #22212C;
-
     padding: 24px;
 }
 
 section {
     height: 100vh;
-
     display: grid;
     gap: 24px;
     grid-template-areas: 
     "head main"
     "head main"
-    "head footer";
+    "head foot"
+    "head foot";
     grid-template-columns: 400px;
-
-    margin-bottom: 160px;
+    margin-bottom: 180px;
 }
 
 header {
+    grid-area: head;
     display: grid;
     gap: 24px;
-    margin-bottom: 24px;
-
-    grid-area: head;
 }
 
 #identify {
     background: #302F3D;
     border-radius: 10px;
-
     padding: 24px;
-
     text-align: center;
 }
 
@@ -65,7 +58,6 @@ header p {
 #social {
     background: #302F3D;
     border-radius: 10px;
-
     padding: 24px;
     font-size: 12px;
 }
@@ -85,31 +77,100 @@ header p {
     display: grid;
     grid-template-columns: 80px 80px 80px;
     gap: 24px;
-    
+
     padding: 24px;
 }
 
 .technology-list li {
     background-color: #CB92B1;
     border-radius: 12px;
+    padding: 3px;
 
-    font-weight: bold;
     color: #302F3D;
-
     text-align: center;
+    font-weight: bolder;
+    font-size: 14px;
 }
 
 main {
+    grid-area: main;
+
+    display: grid;
+    gap: 24px;
+    grid-template-areas: 
+    "top top"
+    "p-1 p-2";
+
+    grid-template-rows: 60px 150px ;
+}
+
+#projects {
+    grid-area: top;
     background: #302F3D;
     border-radius: 10px;
-    grid-area: main;
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+#star-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#project-1 {
+    grid-area: p-1;
+    background: #302F3D;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+#project-1 h4 {
+    padding-bottom: 12px;
+}
+
+#project-1 p,span {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+
+
+#star-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#project-2 {
+    grid-area: p-2;
+    background: #302F3D;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+#project-2 h4 {
+    padding-bottom: 12px;
+}
+
+#project-2 p {
+    display: flex;
+}
+
+#project-2 p,span {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+
 
 footer {
+    grid-area: foot;
     background: #302F3D;
     border-radius: 10px;
-    grid-area: footer;
-
     margin-bottom: 300px;
+    
 }
-
