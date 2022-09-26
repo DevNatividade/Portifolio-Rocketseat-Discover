@@ -8,207 +8,231 @@
 }
 
 html {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
 }
 
 body {
     background: #22212C;
-    padding: 24px;
 }
 
 section {
-    height: 100vh;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px black;
+
     display: grid;
-    gap: 24px;
     grid-template-areas: 
-    "head main"
-    "head main"
-    "head foot"
-    "head foot";
-    grid-template-columns: 400px;
-    margin-bottom: 180px;
+    "header main"
+    "header main"
+    "header none";
+    grid-template-columns: 400px 1fr;
+    gap: 40px;
 }
 
 header {
-    grid-area: head;
+    grid-area: header;
+
     display: grid;
-    gap: 24px;
+    grid-template-areas: 
+    "h-1 h-1"
+    "h-2 h-2"
+    "h-3 h-3";
+    gap: 24px;;
 }
 
-#identify {
+header #h-1 {
+    grid-area: h-1;
     background: #302F3D;
-    border-radius: 10px;
-    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+
     text-align: center;
 }
 
-header img {    
-    margin:24px 0;
+header #h-1 img {
+    margin: 40px 24px 24px;
     padding: 1px;
     width: 120px;
     border-radius: 50%;
     border: 3px solid rgb(34, 174, 34);
 }
 
-header p {
+header #h-1 p {
+    font-size: 12px;
+    padding-bottom: 40px;
+}
+
+header #h-2 {
+    padding: 24px;
+
+    grid-area: h-2;
+    background: #302F3D;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+}
+
+header #h-2 li {
+    padding: 12px;
     font-size: 12px;
 }
 
-#social {
-    background: #302F3D;
-    border-radius: 10px;
+header #h-3 {
     padding: 24px;
+
+    grid-area: h-3;
+    background: #302F3D;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+}
+
+header #h-3 ul {
+    padding: 24px;
+
+    display: flex;
+    gap: 20px;
+}
+
+header #h-3 li {
+    padding: 10px;
+    background: #038bbb;
+    border-radius: 16px;
     font-size: 12px;
-}
-
-#social li {
-    padding: 12px
-}
-
-#technology {
-    background: #302F3D;
-    border-radius: 10px;
-
-    padding: 24px;
-}
-
-.technology-list {
-    display: grid;
-    grid-template-columns: 80px 80px 80px;
-    gap: 24px;
-
-    padding: 24px;
-}
-
-.technology-list li {
-    background-color: #CB92B1;
-    border-radius: 12px;
-    padding: 3px;
-
-    color: #302F3D;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 14px;
+    color: #22212C;
 }
 
 main {
     grid-area: main;
 
     display: grid;
-    gap: 24px;
     grid-template-areas: 
-    "top top"
-    "p-1 p-2";
-
-    grid-template-rows: 60px 150px ;
+    "m-1 m-1"
+    "m-2 m-3"
+    "m-4 m-4"
+    "m-5 m-5";
+    grid-template-rows: 56px 1fr 56px 1fr;
+    gap: 24px 8px;
 }
 
-#projects {
-    grid-area: top;
+main #m-1 {
+    grid-area: m-1;
     background: #302F3D;
-    border-radius: 10px;
-    padding: 12px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 24px;
 }
 
-#star-1 {
-    margin-top: 25px;
+main #m-2 {
+    grid-area: m-2;
+    background: #302F3D;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+    padding: 24px;
+}
+
+main #m-2 #project-top-2 {
+    display: grid;
+    gap: 16px;
+}
+
+main #m-2 #project-top-2 p {
+    font-size: 14px;
+}
+
+main #m-2 #project-bottom-2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
-#project-1 {
+main #m-2 #project-bottom-2 p,span {
+    font-size: 14px;
+}
 
-    height: 190px;
-    grid-area: p-1;
+main #m-2 #project-bottom-2 svg {
+    height: 16px;
+}
+
+main #m-3 {
+    grid-area: m-3;
     background: #302F3D;
-    border-radius: 10px;
-    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+    padding: 24px 24px 8px 24px;
 }
 
-#project-1 h4 {
-    padding-bottom: 12px;
+main #m-3 #project-top-3 {
+    display: grid;
+    gap: 16px;
 }
 
-#project-1 p,span {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
+main #m-3 #project-top-3 p {
+    font-size: 14px;
 }
 
-
-#star-2 {
-    margin-top: 25px;
+main #m-3 #project-bottom-3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 32px;
 }
 
-#project-2 {
-    height: 190px;
-    grid-area: p-2;
+main #m-3 #project-bottom-3 p,span {
+    font-size: 14px;
+}
+
+main #m-3 #project-bottom-3 svg {
+    height: 16px;
+}
+
+main #m-4 {
+    grid-area: m-4;
     background: #302F3D;
-    border-radius: 10px;
-    padding: 24px;
-}
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
 
-#project-2 h4 {
-    padding-bottom: 12px;
-}
-
-#project-2 p,span {
     display: flex;
     align-items: center;
-    padding-top: 24px;
+    padding: 24px ;
 }
 
-
-footer {
-    grid-area: foot;
-    margin-bottom: 300px;
-    
-}
-
-
-#posts h2 {
+main #m-5 {
+    grid-area: m-5;
     background: #302F3D;
-    margin-bottom: 24px;
-    padding: 24px;
-    border-radius: 10px;
-}
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
 
-#post {
-    background: #302F3D;
-    border-radius: 10px;
-
+    padding: 24px /*24px 24px 8px*/;
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
-#image-post img {
-    width: 120px;
-    border-radius: 10px;
-    margin: 24px 10px 24px 24px;
+main #m-5 img {
+    height: 120px;
+    border-radius: 16px;
 }
 
-#info-post {
-    padding: 24px 0 0;
+main #m-5 #post-info {
+    display: grid;
+    gap: 40px;
+}
 
+main #m-5 #post-info ul {
     display: flex;
-    flex-direction: column;
-    gap: 45px;
+    gap: 8px;
+    margin-top: 8px;
 }
 
-#info-post p {
-    margin-bottom: 5px;
+main #m-5 #post-info #time-ago p {
+    margin-top: 8px;
+    font-size: 12px;
 }
 
-#tech-post ul {
-    display: flex;
-    gap: 12px;
+main #m-5 #post-info #rashtag {
+    font-size: 14px;
 }
