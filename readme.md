@@ -1,6 +1,6 @@
 # Portifólio Vagner Natividad
 
-![preview](Portif%C3%B3lio-Vagner-Natividade.jpeg)
+![preview]()
 
 > Rocketseat Discover | Portfolio Project
 
