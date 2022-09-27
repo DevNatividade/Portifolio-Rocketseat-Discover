@@ -37,7 +37,7 @@ header {
     "h-1 h-1"
     "h-2 h-2"
     "h-3 h-3";
-    gap: 24px;;
+    gap: 24px;
 }
 
 header #h-1 {
@@ -47,6 +47,12 @@ header #h-1 {
     box-shadow: 1px 1px 5px black;
 
     text-align: center;
+
+    transition: transform .3s;
+}
+
+header #h-1:hover {
+    transform: scale(1.01);
 }
 
 header #h-1 img {
@@ -69,6 +75,12 @@ header #h-2 {
     background: #302F3D;
     border-radius: 16px;
     box-shadow: 1px 1px 5px black;
+
+    transition: transform .3s;
+}
+
+header #h-2:hover {
+    transform: scale(1.01);
 }
 
 header #h-2 li {
@@ -83,6 +95,12 @@ header #h-3 {
     background: #302F3D;
     border-radius: 16px;
     box-shadow: 1px 1px 5px black;
+
+    transition: transform .3s;
+}
+
+header #h-3:hover {
+    transform: scale(1.01);
 }
 
 header #h-3 ul {
@@ -97,7 +115,13 @@ header #h-3 li {
     background: #3a89c9;
     border-radius: 16px;
     font-size: 12px;
-    color: #22212C;
+    color: #22212C;     
+
+    transition: transform .3s ;
+}
+
+header #h-3 li:hover {
+    transform: scale(1.1);
 }
 
 main {
@@ -123,6 +147,12 @@ main #m-1 {
     align-items: center;
     justify-content: space-between;
     padding: 24px;
+
+    transition: transform .3s;
+}
+
+main #m-1:hover {
+    transform: scale(1.01);
 }
 
 main #m-2 {
@@ -131,6 +161,12 @@ main #m-2 {
     border-radius: 16px;
     box-shadow: 1px 1px 5px black;
     padding: 24px;
+
+    transition: transform .3s;
+}
+
+main #m-2:hover {
+    transform: scale(1.01);
 }
 
 main #m-2 #project-top-2 {
@@ -163,6 +199,12 @@ main #m-3 {
     border-radius: 16px;
     box-shadow: 1px 1px 5px black;
     padding: 24px 24px 8px 24px;
+
+    transition: transform .3s;
+}
+
+main #m-3:hover {
+    transform: scale(1.01);
 }
 
 main #m-3 #project-top-3 {
@@ -198,6 +240,12 @@ main #m-4 {
     display: flex;
     align-items: center;
     padding: 24px ;
+
+    transition: transform .3s;
+}
+
+main #m-4:hover {
+    transform: scale(1.01);
 }
 
 main #m-5 {
@@ -209,6 +257,12 @@ main #m-5 {
     padding: 24px /*24px 24px 8px*/;
     display: flex;
     gap: 8px;
+
+    transition: transform .3s;
+}
+
+main #m-5:hover {
+    transform: scale(1.01);
 }
 
 main #m-5 img {
