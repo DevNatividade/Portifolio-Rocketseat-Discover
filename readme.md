@@ -1,6 +1,6 @@
-# Portifólio Vagner Natividad
+# Portifólio Vagner Natividade
 
-![preview](Portif%C3%B3lio-Vagner-Natividade.jpeg)
+![preview](./.github/Portif%C3%B3lio-DevN.jpeg)
 
 > Rocketseat Discover | Portfolio Project
 
